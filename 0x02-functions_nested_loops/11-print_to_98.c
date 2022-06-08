@@ -3,9 +3,9 @@
 
 
 /**
-print_to_98 - prints numbers from n
-@n: the starting point
-Return: 0
+* print_to_98 - prints numbers from n
+* @n: the starting point
+* Return: 0
 */
 void print_to_98(int n)
 {
