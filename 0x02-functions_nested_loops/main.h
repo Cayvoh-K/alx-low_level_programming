@@ -1,1 +1,1 @@
-Write a program that prints _putchar
+int _putchar(char c);
