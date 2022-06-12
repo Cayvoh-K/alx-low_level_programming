@@ -1,21 +1,20 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdio.h>
+#include <string.h>
+
+/* more headers go there */
 
 /**
- * main -> assign a random number to the variable n each time it is executedand print the last digit of the number stored in thr variable n
+ * main - Entry point
+ *
+ * Return: Always 0
  */
-{
- *Return: Always 0
- */ 
 int main(void)
 {
-int ch;
-for (ch = 97; ch <= 122; ch++)
-{
-	putchar(ch);
-putchar(10); /* this is an ascii code for new line*/
+	char str;
 
-return (0);
+	for (str = 'a'; str <= 'z' ; str++)
+		putchar(str);
+	putchar('\n');
+	return (0);
 
 }
