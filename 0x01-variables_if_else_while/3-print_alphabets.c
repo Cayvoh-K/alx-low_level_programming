@@ -1,22 +1,23 @@
-nclude < stdio.h >
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+/* more  headers go there */
 
 /**
- * main -> assign a random number to the variable n each time it is executed
- * and print the last digit of the number stored in the variable n
- * return : always 0
+ * main - Entry point
+ *
+ * Return: Always 0
  */
-int main(void);
+int main(void)
 {
-	int ch;
-	for (ch = 97; ch <= 122; ch++)
-        {
-		putchar(ch);
-	}
-	for (ch = 65; ch<= 90; ch++)
-	{
-	        putchar(ch);
-	}	
-	putchar(10); /* this is an ascii code for new line*/
+	char str;
 
+	for (str = 'a'; str <= 'z' ; str++)
+		putchar(str);
+	for (str = 'a'; str <= 'z' ; str++)
+		putchar(toupper(str));
+	putchar('\n');
 	return (0);
+
 }
