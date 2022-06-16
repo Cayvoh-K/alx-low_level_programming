@@ -1,15 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - prints the size of various types
- * return: 0 if exited properly, non-zero otherwise
- */
+* main - Prints "Programming is like building a multilingual
+*                puzzle, followed by a new line."
+*
+* Return: Always 0.
+*/
 int main(void)
 {
-printf("size of a char: %d byte(s)\n", sizeof(char));
-priintf("size of an int: %d byte(s)\n", sizeof(int));
-printf("size of a long int: %d byte(S)\n", sizeof(long int));
-printf("size of a long long int: %d byte(S)\n", size of a (long long int));
-printf("size of a float: %d byte(S)\n", sizeof(float));
+printf("Size of a char: %d byte(s)\n", sizeof(char));
+printf("Size of an int: %d byte(s)\n", sizeof(int));
+printf("Size of a long int: %d byte(s)\n", sizeof(long int));
+printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
+printf("Size of a float: %d byte(s)\n", sizeof(float));
+
 return (0);
 }
