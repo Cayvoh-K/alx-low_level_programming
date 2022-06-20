@@ -1,19 +1,32 @@
 #include "main.h"
 
 /**
- * _puts - prints a string
- * @str: A pointer to an int that will be changed
- * Return: void which means our answer is correct
- */
+* _strspn - search a string for a set of bytes
+* @s: source string
+* @accept: accepted string
+*
+* Return: number of bytes in the init segment
+*/
+unsigned int _strspn(char *s, char *accept)
+{
+unsigned int a = 0, b, t = 0;
 
-void _puts(char *str)
+while (accept[a])
 {
-char *c;
-int m;
-c = str;
-for (m = 0; c[m]; m++)
+b = 0;
+
+while (s[b] != 32)
 {
-_putchar(c[m]);
+if (accept[a] == s[b])
+{
+t++;
 }
-_putchar('\n');
+
+b++;
+}
+
+a++;
+}
+
+return (t);
 }
