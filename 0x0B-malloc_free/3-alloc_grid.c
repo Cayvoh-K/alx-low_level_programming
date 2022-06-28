@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
 * alloc_grid -> allocatingn 2d array
