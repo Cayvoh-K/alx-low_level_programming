@@ -54,8 +54,8 @@ return (words);
  */
 char **strtow(char *str)
 {
-char **settings;
-int index = 0, words, w letters, l;
+char **strings;
+int index = 0, words, w, letters, l;
 
 if (str == NULL || str[0] == '\0')
 return (NULL);
