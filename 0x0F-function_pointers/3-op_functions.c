@@ -1,35 +1,61 @@
-#include <stdio.h>
-
-#include <stdlib.h>
-
 #include "3-calc.h"
 
 /**
-* get_op_func - selects the correct func to perform the operation
-* asked by the user
-* @s: operator passed as arguement to program
-* Return: a pointer to the function
+* op_add - funtion to add
+* @a: input 1
+* @b: input 2
+* Return: sum a and b
 */
 
-int (*get_op_func(char *s))(int, int)
+int op_add(int a, int b)
 {
-op_t ops[] = {
-{"+", op_add},
-{"-", op_sub},
-{"*", op_mul},
-{"/", op_div},
-{"%", op_mod},
-{NULL, NULL}
-};
-int i;
-i = 0;
-while (i < 5)
-{
-if (*s == *(ops[i]).op)
-{
-return (*(ops[i]).f);
+return (a + b);
 }
-i++;
+
+/**
+* op_sub - funtion to subtract
+* @a : input 1
+* @b: input 2
+* Return: difference of a and b
+*/
+
+int op_sub(int a, int b)
+{
+return (a - b);
 }
-return (NULL);
+
+/**
+* op_mul - funtion to multiplies
+* @a: input 1
+* @b: input 2
+* Return: product of a and b
+*/
+
+int op_mul(int a, int b)
+{
+return (a * b);
+}
+
+/**
+* op_div - function to div
+* @a: input 1
+* @b: input 2
+* Return: division of a by b
+*/
+
+int op_div(int a, int b)
+{
+return (a / b);
+}
+
+/**
+* op_mod - function to mod
+* @a: input 1
+* @b: input 2
+* Return: remainder of the division of a
+*/
+
+int op_mod(int a, int b)
+{
+return (a % b);
 }
