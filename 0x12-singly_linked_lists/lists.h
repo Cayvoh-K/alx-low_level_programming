@@ -1,6 +1,9 @@
-#ifndef LISTS_H
+#ifndef LIST_FILE
 
-#define LISTS_H
+#define LIST_FILE
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 /**
 * struct list_s - singly linked list
@@ -32,4 +35,4 @@ void free_list(list_t *head);
 
 void print(void) __attribute__((constructor));
 
-#endif /*LISTS_H*/
+#endif
