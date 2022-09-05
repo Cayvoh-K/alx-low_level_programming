@@ -1,3 +1,2 @@
 #!/bin/bash
-gcc *.o -fPIC -shared -o liball.so
-LD_PRELOAD=$WPD/liball.so
+gcc -g -fPIC -Wall -Werror -Wextra -pedantic *.c -shared -o liball.so
