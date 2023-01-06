@@ -3,8 +3,8 @@
 
 /**
  * linear_search - Looks for a value in an array
- * @array: List of integers
- * size: The size of the array
+ * @array: list of integers
+ * @size: The size of the array
  * @value: The value that the algorithm is trying to find
  * Return: The index in which the value is located in the array. If the
  * value is not found -1 is return.
