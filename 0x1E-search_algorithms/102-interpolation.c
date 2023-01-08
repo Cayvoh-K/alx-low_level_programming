@@ -9,7 +9,7 @@
  * @value: value to search in
  * Return: index of the number
  */
-int interpolation_search(int *array, size_t size, int value);
+int interpolation_search(int *array, size_t size, int value)
 {
 	size_t pos, low, high;
 	double f;
