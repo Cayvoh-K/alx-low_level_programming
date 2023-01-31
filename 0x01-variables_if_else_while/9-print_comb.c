@@ -1,24 +1,19 @@
 #include <stdio.h>
-#include <string.h>
-#include <ctype.h>
-
-/* more headers go there */
 
 /**
- * main - Entry point
- *
- * Return: Always 0
+ * main - prints all possible combinations of single-digit numbers
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int number;
+	int n;
 
-	for (number = 48; number <= 57; number++)
+	for (n = 48; n < 58; n++)
 	{
-		putchar(number);
-		if (number != 57)
+		putchar(n);
+		if (n != 57)
 		{
-			putchar(' ');
+			putchar(',');
 			putchar(' ');
 		}
 	}
